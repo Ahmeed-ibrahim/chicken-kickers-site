@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order | Chicken Kickers</title>
+  <link rel="stylesheet" href="styles-order.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<header>
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div class="logo">
+    <img src="assets/images/logo.png" alt="Chicken Kickers Logo" />
+  </div>
+
+  <div class="nav">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <button class="btn" type="button">
+      <a href="sign-up.html">Sign up</a>
+    </button>
+  </div>
+</header>
+
+<section class="order-section">
+  <div class="order-container">
+
+    <div class="left">
+      <h2>Order Summary</h2>
+
+      <div class="product">
+        <img src="assets/images/burger.png">
+        <div class="details">
+          <h4>Chicken Burger</h4>
+          <span>200 EGP</span>
+        </div>
+        <div class="qty">
+          <button>-</button>
+          <span>2</span>
+          <button>+</button>
+        </div>
+        <div class="price">400 EGP</div>
+      </div>
+
+      <div class="product">
+        <img src="assets/images/wings.png">
+        <div class="details">
+          <h4>Hot Wings</h4>
+          <span>120 EGP</span>
+        </div>
+        <div class="qty">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+        <div class="price">120 EGP</div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="row">
+        <span>Subtotal</span>
+        <strong>520 EGP</strong>
+      </div>
+
+      <button class="place">PLACE ORDER</button>
+    </div>
+
+    <div class="right">
+      <h2>Customer Information</h2>
+
+      <input placeholder="Full Name">
+      <input placeholder="Phone Number">
+      <input placeholder="Address">
+
+      <h3>Delivery / Pickup</h3>
+      <div class="toggle">
+        <div class="box active">
+          🚚 Delivery
+          <span>30 EGP · 30-45 min</span>
+        </div>
+        <div class="box">
+          🏪 Pickup
+        </div>
+      </div>
+
+      <h3>Payment Method</h3>
+      <div class="payment">
+        <label><input name="Payment-Method" type="radio" checked> Cash on Delivery</label>
+        <label><input name="Payment-Method" type="radio"> Credit / Debit Card</label>
+        <label><input name="Payment-Method" type="radio"> Vodafone Cash</label>
+      </div>
+
+      <div class="row total">
+        <span>Total</span>
+        <strong>550 EGP</strong>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
